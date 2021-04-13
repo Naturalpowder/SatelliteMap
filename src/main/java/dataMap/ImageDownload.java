@@ -43,8 +43,6 @@ public class ImageDownload implements Runnable {
 	/**
 	 * 设定URL输入信息
 	 *
-	 * @param i
-	 * @param j
 	 * @param url
 	 */
 	public void setInfo(String url) {
@@ -130,7 +128,7 @@ public class ImageDownload implements Runnable {
 	/**
 	 * 下载文件到本地
 	 *
-	 * @param urlString 被下载的文件地址
+	 * @param is 被下载的文件流
 	 * @param filename  本地文件名
 	 * @throws Exception 各种异常
 	 */
@@ -166,7 +164,6 @@ public class ImageDownload implements Runnable {
 	 * 判断一个文件的最后一行是否为某字符串
 	 *
 	 * @param src 文件路径
-	 * @param key 判断是否最后一行的字符串 是 则 返回 true 不是 则 返回 false
 	 */
 	public static boolean checkLastLine(String src) {
 		File file = new File(src);
